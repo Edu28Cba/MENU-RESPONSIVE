@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <title>TrabajoPractivoLayout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-sale=1, minimum-sale=1" />
+   
+    <link rel="stylesheet" href="~/MyStaticFiles/Style/layoutstyle.css"/>
+
+</head>
+<body>
+<header>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="~/MyStaticFiles/logo.png" alt="">
+    </label>
+    <div class="col">
+    <nav class="menu">
+        <ul>
+
+            <li><a href="">Iniciar Sesion</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Carrito</a></li>
+            <li><a href="">Soporte</a></li>
+
+            
+        </ul>
+    </nav>
+        </div>
+
+    
+</header>
+    
+    
+
+    <div class="footer">
+
+        <p>Contacto, Consultas y Pedidos: <a href="mailto:edu24cba@gmail.com">edu24cba@gmail.com</a></p>
+
+        
+    </div>
+
+
+@RenderBody()
+
+@RenderSection("Scripts", required: false)
+
+ </body>
+</html>

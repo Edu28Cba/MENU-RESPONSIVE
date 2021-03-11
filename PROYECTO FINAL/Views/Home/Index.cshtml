@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <title>1ERA PAGINA TITULO</title>
+    
+    <link href="~/MyStaticFiles/Style/indexstyle.css" rel="stylesheet" />"
+
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Tienda Virtual Cordoba Capital</h1>
+
+    </div>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../../MyStaticFiles/S1.jpg" style="width:100%">
+            <div class="text">Todo Lo Que necesita</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../../MyStaticFiles/S2.jpg" style="width:100%">
+            <div class="text">Haga Su Pedido</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../../MyStaticFiles/S3.jpg" style="width:100%">
+            <div class="text">Noga, Only y Muchas Mas Marcas</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../../MyStaticFiles/S4.jpg" style="width:100%">
+            <div class="text">Aceptamos Transferencias Bancarias</div>
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../../MyStaticFiles/S5.jpg" style="width:100%">
+            <div class="text">Envios A Domicilio en Cordoba Capital</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</body>
+</html>
